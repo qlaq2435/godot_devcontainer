@@ -3,7 +3,7 @@
 {
 	"name": "C# (.NET)",
 	// Or use a Dockerfile or Docker Compose file. More info: https://containers.dev/guide/dockerfile
-	"image": "registry.qlaq2435.space/homelab/devcontainers-dotnet:8.0-bookworm-slim"
+	"image": "registry.qlaq2435.space/homelab/godot-dotnet:4.6-mono"
 
 	// Features to add to the dev container. More info: https://containers.dev/features.
 	// "features": {},
