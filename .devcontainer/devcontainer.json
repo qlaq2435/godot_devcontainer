@@ -17,7 +17,7 @@
 	// }
 
 	// Use 'postCreateCommand' to run commands after the container is created.
-	"postCreateCommand": " export PATH=\"/usr/local/share/Godot:${PATH}\""
+	// "postCreateCommand": "dotnet restore",
 
 	// Configure tool-specific properties.
 	// "customizations": {},

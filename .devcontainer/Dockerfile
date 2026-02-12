@@ -31,6 +31,7 @@ RUN mkdir -p ~/.local/share/godot/export_templates/${GODOT_VERSION}.stable.mono 
 
 # 设置PATH
 ENV PATH="/usr/local/share/Godot:${PATH}"
+RUN echo 'export PATH="/usr/local/share/Godot:$PATH"' >> /etc/profile
 
 # 验证安装
 RUN godot --version

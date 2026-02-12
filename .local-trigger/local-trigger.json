@@ -1,0 +1,8 @@
+{
+    "localPath":"\\\\QLAQ2435-SUPER-SERVER\\godot-devcontainer\\small\\",
+    "triggerCommand": {
+        "cmd":"C:\\Windows\\System32\\cmd.exe",
+        "args":["/c","start","${localPath}\\build\\small_debug.exe", "--debug","--remote-debug","tcp://127.0.0.1:6007"],
+        "cwd":"C:\\"
+    }
+}

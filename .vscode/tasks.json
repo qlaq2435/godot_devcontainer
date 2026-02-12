@@ -1,0 +1,37 @@
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "[Debug] build",
+            "command": "godot",
+            "type": "shell",
+            "args": [
+                "--headless",
+                "-v",
+                "--path",
+                "/workspaces/PROJECT",
+                "--export-debug",
+                "\"Windows Desktop\"",
+                "/build/EXPORTATION", 
+            ],
+            "group": "build",
+            "presentation": {
+                "reveal": "silent"
+            },
+        },
+        {
+            "label": "[Debug] build && run",
+            "type": "shell",
+            "command": "${command:local-trigger.run}",
+            "dependsOn": "[Debug] build",
+            "args": [],
+            "group": "build",
+            "presentation": {
+                // "reveal": "silent"
+            },
+            "problemMatcher": []
+        }
+    ]
+}
